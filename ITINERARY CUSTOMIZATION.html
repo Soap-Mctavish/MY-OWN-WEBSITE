@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html{
+                background-image: url("https://cdn.pixabay.com/photo/2017/10/23/05/56/summer-2880261_960_720.jpg");
+            }
+       body {
+  margin: 0;
+  background: lightgray;
+  text-align: center;
+  font-family: sans-serif;
+  color: #fefefe;
+}
+.container {
+  position: relative;
+  width: 320px;
+  margin: 100px auto 0 auto;
+  perspective: 1000px;
+}
+
+.carousel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d; 
+  animation: rotate360 60s infinite forwards linear;
+}
+.carousel__face { 
+  position: absolute;
+  width: 300px;
+  height: 187px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  background-size: cover;
+  box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
+  display: flex;
+}
+
+span {
+  margin: auto;
+  font-size: 2rem;
+}
+
+
+.carousel__face:nth-child(1) {
+  background-image: url("https://cdn.pixabay.com/photo/2013/12/22/22/01/india-232725_960_720.jpg");
+  transform: rotateY(  0deg) translateZ(430px); }
+.carousel__face:nth-child(2) { 
+  background-image: url("https://cdn.pixabay.com/photo/2021/04/06/11/22/hawa-mahal-6156123_960_720.jpg");
+    transform: rotateY( 40deg) translateZ(430px); }
+.carousel__face:nth-child(3) {
+  background-image: url("https://cdn.pixabay.com/photo/2017/05/10/13/39/ladakh-2300904_960_720.jpg");
+  transform: rotateY( 80deg) translateZ(430px); }
+.carousel__face:nth-child(4) {
+  background-image: url("https://cdn.pixabay.com/photo/2015/07/29/22/56/taj-mahal-866692_960_720.jpg");
+  transform: rotateY(120deg) translateZ(430px); }
+.carousel__face:nth-child(5) { 
+  background-image: url("https://cdn.pixabay.com/photo/2016/03/27/17/26/water-1283199_960_720.jpg");
+ transform: rotateY(160deg) translateZ(430px); }
+.carousel__face:nth-child(6) { 
+  background-image: url("https://cdn.pixabay.com/photo/2018/09/29/09/47/temple-3711082_960_720.jpg");
+ transform: rotateY(200deg) translateZ(430px); }
+.carousel__face:nth-child(7) { 
+  background-image: url("https://cdn.pixabay.com/photo/2017/09/07/13/21/toy-train-2725148_960_720.jpg");
+ transform: rotateY(240deg) translateZ(430px); }
+.carousel__face:nth-child(8) {
+  background-image: url("https://cdn.pixabay.com/photo/2015/08/19/15/41/charminar-896162_960_720.jpg");
+  transform: rotateY(280deg) translateZ(430px); }
+.carousel__face:nth-child(9) {
+  background-image: url("https://cdn.pixabay.com/photo/2018/12/14/14/24/arunachal-pradesh-3875150_960_720.jpg");
+  transform: rotateY(320deg) translateZ(430px); }
+
+
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+.button{
+	               background-color: #1c87c9;
+                   -webkit-border-radius: 60px;
+	               border-radius: 60px;
+	               border: none;
+	               color: #eeeeee;
+	               cursor: pointer;
+	               display: inline-block;
+	               font-family: sans-serif;
+                   font-size: 20px;
+	               padding: 10px 10px;
+	               text-align: center;
+	               text-decoration: none;
+	            }
+	@keyframes glowing {
+	0% {
+	  background-color: #2ba805;
+	  box-shadow: 0 0 5px #2ba805;
+	}
+	50% {
+	  background-color: #a805a8;
+	  box-shadow: 0 0 20px #8705a8;
+	}
+	100% {
+	  background-color: #2ba805;
+	  box-shadow: 0 0 5px #2ba805;
+	}
+	}
+	.button{
+	animation: glowing 1300ms infinite;
+	}
+        </style>
+    </head>
+    <body>
+    <div class="container">
+        <div class="carousel">
+          <div class="carousel__face"><span><i>SHIMLA</i></span></div>
+          <div class="carousel__face"><span><i>RAJASTHAN</i></span></div>
+          <div class="carousel__face"><span><i>LEH LADAKH</i></span></div>
+          <div class="carousel__face"><span><i>AGRA</i></span></div>
+          <div class="carousel__face"><span><i>KERALA</i></span></div>
+          <div class="carousel__face"><span><i>AURANGBAD</i></span></div>
+          <div class="carousel__face"><span><i>DARJEELING</i></span></div>
+          <div class="carousel__face"><span><i>HYDERABAD</i></span></div>
+          <div class="carousel__face"><span><i>ARUNACHAL</i></span></div>
+        </div>
+      </div>
+      
+    </body>
+    <a href="ABOUT ME.html"><input type="button" class="button" value="PREV"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="REGISTER.html"><input type="button" class="button" value="NEXT">
+</html>
