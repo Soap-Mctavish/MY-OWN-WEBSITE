@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html{
+                background-image: url("https://cdn.pixabay.com/photo/2017/10/23/05/56/summer-2880261_960_720.jpg");
+            }
+            .pl{
+                 background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+                 background-size: 400% 400%;
+                 animation: gradient 15s ease infinite;
+                 color:chartreuse;
+               }
+  
+            @keyframes gradient {
+                 0% {
+                      background-position: 0% 50%;
+                    }
+                 50% {
+                      background-position: 100% 50%;
+                    }
+                 100% {
+                      background-position: 0% 50%;
+                      }
+                 }
+                 .iy{
+                    background-image: url("BACK.jpg");
+                    color: blue;
+                    width: 300px;
+                    border: 15px solid green;
+                    padding: 50px;
+                    margin: 20px;
+                    margin:500px 500px;
+                 }
+                 .button{
+	               background-color: #1c87c9;
+                   -webkit-border-radius: 60px;
+	               border-radius: 60px;
+	               border: none;
+	               color: #eeeeee;
+	               cursor: pointer;
+	               display: inline-block;
+	               font-family: sans-serif;
+                   font-size: 20px;
+	               padding: 10px 10px;
+	               text-align: center;
+	               text-decoration: none;
+	            }
+	@keyframes glowing {
+	0% {
+	  background-color: #2ba805;
+	  box-shadow: 0 0 5px #2ba805;
+	}
+	50% {
+	  background-color: #a805a8;
+	  box-shadow: 0 0 20px #8705a8;
+	}
+	100% {
+	  background-color: #2ba805;
+	  box-shadow: 0 0 5px #2ba805;
+	}
+	}
+	.button{
+	animation: glowing 1300ms infinite;
+	}
+        </style>
+    </head>
+    <body>
+   
+        <div class="pl"><marquee direction="right" width=100%;><b><i>HURRY UP YOUR'E JUST ONE STEP BACK TO GET TO US!!!</i></b></marquee></div>
+        <div class="iy">
+            <form>
+                <label for="name"><b style="color: blue;">NAME:</b></label>
+                <input type="text" id="name" required placeholder="write your name here"><br><br>
+                <label for="email"><b style="color: blue;">E-MAIL</b></label>
+                <input type="email" id="email" required placeholder="write your email here"><br><br>
+                <label for="PHONE"><b style="color: blue;">PH.NO:</b></label>
+                <small style="color: blue;">Format: 123-456-7890</small>
+                <input type="tel" id="PHONE" required  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="enter your phone number"><br><br>
+                <h3><b style="color: blue;">GENDER:</b></h3>
+                <label for="male"><b style="color: blue;">MALE</b></label>
+                <input type="radio" id="male" required name="cox"><br>
+                <label for="female"><b style="color: blue;">FEMALE</b></label>
+                <input type="radio" id="female" required name="cox"><br>
+                <label for="other"><b style="color: blue;">OTHER</b></label>
+                <input type="radio" id="other" required name="cox"><br>
+                <label for="date"><b style="color: blue;">DATE-OF-BIRTH:</b></label>
+                <input type="date" id="date" required><br><br>
+                <label for="place"><b style="color: blue;">DESTINATION:</b></label><br>
+                <select id="place" required>
+                    <option value="SHIMLA">SHIMLA</option>
+                    <option value="DARJEELING">DARJEELING</option>
+                    <option value="LEH LADAKH">LADAKH</option>
+                    <option value="ARUNACHAL">ARUNACHAL</option>
+                    <option value="RAJASTHAN">RAJASTHAN</option>
+                    <option value="AGRA">AGRA</option>
+                    <option value="HYDERABAD">HYDERABAD</option>
+                    <option value="KERALA">KERALA</option>
+                    <option value="AURANGBAD">AURANGBAD</option>
+                </select><br><br>
+                <label for="feedback"><b style="color: blue;">TYPE OF VISIT:</b></label><br>
+                <select id="feedback" required>
+                    <option value="CASUAL STAY">CASUAL STAY</option>
+                    <option value="ONE DAY-ONE NIGHT">ONE DAY ONE NIGHT</option>
+                    <option value="ONE WEEK">ONE WEEK</option>
+                    <option value="WHOLE MONTH">WHOLE MONTH</option>
+                </select><br><br>
+                <label for="feedback"><b style="color: blue;">SIZE OF GROUP:</b></label><br>
+                <select id="feedback" required>
+                    <option value="SINGLE PERSON">SINGLE PERSON</option>
+                    <option value="COUPLE">COUPLE</option>
+                    <option value="COUPLE & SINGLE CHILD">COUPLE & SINGLE CHILD</option>
+                    <option value="COUPLE & MORE THAN ONE CHILD">COUPLE & MORE THAN ONE CHILD</option>
+                    <option value="LARGE GROUP">LARGE GROUP</option>
+                </select><br><br>
+                <h3><b style="color: blue;">TRAVEL MODE PREFFERRED:</b></h3>
+                <label for="pl"><b style="color: blue;">RAILWAYS</b></label>
+                <input type="checkbox" id="pl" required><br>
+                <label for="pl"><b style="color: blue;">AIRWAYS</b></label>
+                <input type="checkbox" id="pl" required><br>
+                <label for="pl"><b style="color: blue;">LUXURY SLEEPER AC BUS</b></label>
+                <input type="checkbox" id="pl" required><br>
+                <label for="pl"><b style="color: blue;">14 SEATER</b></label>
+                <input type="checkbox" id="pl" required><br>
+                <label for="pl"><b style="color: blue;">7 SEATER</b></label>
+                <input type="checkbox" id="pl" required><br>
+                <label for="pl"><b style="color: blue;">SINGLE CAR</b></label>
+                <input type="checkbox" id="pl" required><br>
+                <input  type="SUBMIT">&nbsp;<a href="REGISTER.html"><input type="button"  value="RESET"></a>
+        </form>
+    </div>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ITINERARY CUSTOMIZATION.html"><input type="button" class="button" value="PREV"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="CONTACT.html"><input type="button" class="button" value="NEXT"></a>
+    </body>
+</html>
